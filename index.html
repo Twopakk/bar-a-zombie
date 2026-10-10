@@ -272,7 +272,7 @@ var MESSAGES_POUR_ELLE=[
 ];
 
 
-var PERSO_EVERY=22000;
+var PERSO_EVERY=12000;
 var KEY='shakerStudy.v1';
 var SAMPLE=[
   ['Mojito','Rhum blanc, menthe, citron vert, sucre, eau gazeuse',{glass:'Verre long',ice:'Pilée',method:'Dans le verre'}],
@@ -1164,7 +1164,7 @@ function startRush(){
     fields.push(f);xopts[f]=shuffle(list);
   });
   G={type:'rush',xp:0,startLvl:lvl(),phase:'ready',done:false};
-  R={menu:menu,shelf:buildShelf(menu),fields:fields,xopts:xopts,pick:{},glass:[],seats:[null,null,null],nextAt:[0,3500,8000],el:0,t:SHIFT,served:0,wrong:0,missed:0,streak:0,best:0,score:0,errCards:{},over:false,iv:null,last:0,fbT:null,persoAt:9000,persoQ:[]};
+  R={menu:menu,shelf:buildShelf(menu),fields:fields,xopts:xopts,pick:{},glass:[],seats:[null,null,null],nextAt:[0,3500,8000],el:0,t:SHIFT,served:0,wrong:0,missed:0,streak:0,best:0,score:0,errCards:{},over:false,iv:null,last:0,fbT:null,persoAt:5000,persoQ:[]};
 }
 function rushHTML(){
   if(G.done)return resultHTML();
